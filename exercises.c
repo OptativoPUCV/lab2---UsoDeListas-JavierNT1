@@ -71,15 +71,20 @@ int sumaLista(List *L) {
 
 /*
 Ejercicio 3.
-Crea una función que reciba una lista de punteros a int (int*) y
-un entero elem. La función debe eliminar todos los elementos 
+Crea una función que reciba una lisota de punteros a int (int*) y
+un entero elem. La función debe eliminar tods los elementos 
 de la lista que sean iguales a elem.
 Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-
+  void* elemento = first(L);
+  while(elemento != NULL){
+    if(elemento == elem)
+      popCurrent(elemento);
+    elemento = next(L);
+  }
 }
 
 /*
