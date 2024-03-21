@@ -184,3 +184,8 @@ exercises.c:104:10: error: unused variable ‘elementoC’ [-Werror=unused-varia
 cc1: all warnings being treated as errors
 Compilation failed
 732dc1b
+Thu 21 Mar 2024 09:15:03 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+b249799
