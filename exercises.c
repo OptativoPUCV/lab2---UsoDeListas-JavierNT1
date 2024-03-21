@@ -99,8 +99,8 @@ Puedes usar una pila auxiliar.
 void copia_pila(Stack* P1, Stack* P2) {
   Stack* PilaAux = create_stack();
 
-  while(top(P1) != -1){
-    int* elemento = top(P1);
+  while(top(P1) != NULL){
+    Stack* elemento = top(P1);
     int* elementoC = (int*)malloc(sizeof(int));
     *elementoC = *elemento;
     push(PilaAux,elementoC);
