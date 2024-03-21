@@ -71,3 +71,17 @@ Thu 21 Mar 2024 05:28:47 PM UTC:
  tests:  3|2
 total_score: 40/70
 5116282
+Thu 21 Mar 2024 08:40:07 PM UTC: 
+ exercises.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:102:17: error: comparison between pointer and integer [-Werror]
+  102 |   while(top(P1) != -1){
+      |                 ^~
+exercises.c:100:10: error: unused variable ‘PilaAux’ [-Werror=unused-variable]
+  100 |   Stack* PilaAux = create_stack();
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ab18580
