@@ -162,3 +162,14 @@ exercises.c:105:18: error: invalid use of incomplete typedef ‘Stack’ {aka �
       |                  ^
 Compilation failed
 472dcf5
+Thu 21 Mar 2024 09:14:40 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:103:12: error: unused variable ‘elemento’ [-Werror=unused-variable]
+  103 |     Stack* elemento = top(P1);
+      |            ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+184454c
