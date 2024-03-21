@@ -105,10 +105,8 @@ void copia_pila(Stack* P1, Stack* P2) {
     push(PilaAux,elemento);
   }
   while(top(PilaAux) != NULL){
-    int* elemento = top(PilaAux);
-    int* elementoC = (int*)malloc(sizeof(int));
-    *elementoC = *elemento;
-    push(P2, elementoC);
+    Stack* elemento = top(PilaAux);
+    push(P2, elemento);
     pop(PilaAux);
   }
   free(PilaAux);
