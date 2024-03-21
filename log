@@ -85,3 +85,14 @@ exercises.c:100:10: error: unused variable ‘PilaAux’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 ab18580
+Thu 21 Mar 2024 08:42:48 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:100:10: error: unused variable ‘PilaAux’ [-Werror=unused-variable]
+  100 |   Stack* PilaAux = create_stack();
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9fa866b
