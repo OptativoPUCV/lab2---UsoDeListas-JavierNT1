@@ -46,7 +46,7 @@ List* crea_lista() {
   for(int i = 1; i <= 10; i++){
     int* elemento = (int*) malloc(sizeof(int));
     *elemento = i;
-    pushFront(L, elemento);
+    pushBack(L, elemento);
   }
   
   imprime_lista(L);
