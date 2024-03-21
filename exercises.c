@@ -48,9 +48,7 @@ List* crea_lista() {
     *elemento = i;
     pushBack(L, elemento);
   }
-  
   imprime_lista(L);
-  
   return L;
 }
 
@@ -60,7 +58,15 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   return 0;
+  int suma = 0;
+
+  void* elemento = first(L);
+  while(elemento != NULL){
+    int val = *(int *)elemento;
+    suma+= val;
+    elemento = next(L);
+  }
+  return suma;
 }
 
 /*
