@@ -45,10 +45,11 @@ List* crea_lista() {
   List* L = create_list();
   for(int i = 1; i <= 10; i++){
     int* elemento = (int*) malloc(sizeof(int));
+    *elemento = i;
     pushFront(L, elemento);
   }
   
-  imprime_lista(List *L);
+  imprime_lista(L);
   
   return L;
 }
